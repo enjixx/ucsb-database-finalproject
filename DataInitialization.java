@@ -71,8 +71,8 @@ public class DataInitialization {
 			
 			//Customer Table
 			createTable = "CREATE TABLE Customer ( taxID CHAR(9)," + 
-						   							"PIN INTEGER(4)," + 
-						   							"Address CHAR," +
+						   							"PIN INTEGER," + 
+						   							"Address CHAR(50)," +
 						   							"Name CHAR(20)," +
 						   							"PRIMARY KEY(taxID))";
 			rs= st.executeQuery(createTable);
